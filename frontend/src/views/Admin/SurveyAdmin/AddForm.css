@@ -1,0 +1,141 @@
+
+
+/*//////////////////////////////////////////////////////////////  MAIN CSS ///////////////////////////////////////////////*/
+.draggable-block {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .block-card {
+    border: 2px dashed #ddd; 
+    padding: 20px; 
+    margin: 20px 0; 
+    width: 600px;
+  }
+  
+  .formname-block {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .formname-label {
+    font-weight: bold;
+    color: rgb(61, 177, 249);
+    font-size:30px;
+  }
+  
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .button-wrapper button {
+    margin: 0;
+  }
+
+  .option-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .option-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .checkbox-row .option-item {
+    margin-right: 20px; 
+  }
+ 
+/* To Make Responsive  */
+@media only screen and (max-width: 1200px) {
+  .block-card {
+    width: 100%;
+    max-width: 95%; 
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .block-card {
+    width: 100%;
+    max-width: 95%;
+    overflow-x: hidden;
+  }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .block-card {
+    width: 100%;
+    max-width: 95%;
+    overflow-x: hidden;
+  }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .block-card {
+    width: 100%;
+    max-width: 95%;
+    overflow-x: hidden;
+  }
+}
+
+
+
+@media only screen and (max-width: 490px) {
+  .block-card {
+    width: 100%;
+    max-width: 95%;
+    overflow-x: hidden;
+  }
+}
+
+
+
+@media only screen and (max-width: 375px) {
+  .block-card {
+    width: 100%;
+    max-width: 95%;
+    overflow-x: hidden;
+  }
+}
+
+
+/* Additional styles for mobile view SS-768 TO 375 */
+@media only screen and (max-width: 768px) {
+  .checkbox-row .option-item,
+  .radio-row .option-item {
+    margin-right: 10px;
+    flex-basis: calc(33.33% - 10px); 
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .checkbox-row .option-item,
+  .radio-row .option-item {
+    margin-right: 10px;
+    flex-basis: calc(50% - 10px); 
+  }
+}
+
+
+@media only screen and (max-width: 375px) {
+  .checkbox-row .option-item,
+  .radio-row .option-item {
+    margin-right: 10px;
+    flex-basis: calc(100% - 10px);
+  }
+}
+
+/*//////////////////////////////////////////////////////////////  MAIN CSS ///////////////////////////////////////////////*/

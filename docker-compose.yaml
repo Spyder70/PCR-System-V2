@@ -1,0 +1,36 @@
+version: "3.8"
+services:
+  api:
+    build: .
+    container_name: server_c
+    ports:
+      - '8080:8080'
+    environment:
+      - DB_HOSTNAME=host.docker.internal
+      - DB_USERNAME=root
+      - DB_PASSWORD=CLASHofCLANS
+      - DB_NAME=pcr_system
+      - DB_DIALECT=mysql
+      - DB_PORT=3306
+      - SITE_URI=localhost:3000
+      - SESS_SEC=srvjeet
+      - SESS_NAME=test
+      - ENC_SEC=#oo
+      - ENV_TEST=true
+      - PORT=8080
+      - MAIL_USER=#oo
+      - MAIL_PW=#oo
+      - MAIL_HOST=test.com
+      - MAIL_PORT=465
+      - INIT_MANAGER_EMAIL="test@test.com"
+      - INIT_MANAGER_USERNAME="test_admin"
+      - INIT_MANAGER_PW="testtest1"
+    stdin_open: true
+    tty: true
+  app:
+    build: ./frontend
+    container_name: app_c
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true
